@@ -1,0 +1,15 @@
+rails new blablabla (genera carpeta con proyecto)
+rails generate scaffold nombretabla dato1:tip dato2:tipo... (en el proyecto genera base de datos)
+rake db:migrate (crea migraciones)
+
+agregar atributos a tabla:
+rails generate migration NombreDeMigracion dato:tipo
+ej.    rails g migration AddCategoryIdToProducts category_id:integer
+
+en el modelo de la tabla a la que se le agregara campo se agrega...
+    belongs_to :category
+   
+en la tabla que cede atributo se agrega...
+    has_many :products
+    
+    
