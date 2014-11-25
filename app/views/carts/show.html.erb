@@ -8,5 +8,6 @@
   <% end %> 
 </ul>
 <p>Total: <%= number_to_currency(@cart.total_price) %></p>
+<%= button_to "Proceder al pedido", new_order_path, method: :get %>
 <%= button_to 'Vaciar carrito', @cart, method: :delete, data: { confirm: '¿Estás seguro?' } %>
 

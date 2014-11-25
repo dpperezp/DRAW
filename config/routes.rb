@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :orders
+
   resources :line_items
 
   resources :carts
@@ -10,7 +12,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
   get '/nuevos' => "products#nuevos"
   
-  root 'welcome#index'
+  root 'welcome#index', as: 'index'
   
 
   # The priority is based upon order of creation: first created -> highest priority.
