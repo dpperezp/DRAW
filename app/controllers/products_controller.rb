@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-    before_action :authenticate_user!
-
+  #before_action :authenticate_user!, only:[:new, :edit, :update, :destroy]
+  
   # GET /products
   # GET /products.json
   def index
@@ -63,8 +63,8 @@ class ProductsController < ApplicationController
   end
   
    def nuevos
-    @products = Product.order('created_at DESC').limit(5)
-  end
+     @products = Product.order('created_at DESC').limit(5)
+   end
 
   private
     # Use callbacks to share common setup or constraints between actions.

@@ -1,6 +1,9 @@
-.html
+/* .html
 {
-	background: #7F7F7F url("../images/congruent_outline.jpg") repeat center center fixed;
+	background: #7F7F7F image-url("congruent_outline.jpg") repeat center center fixed;
+} */
+body{
+  background: #7F7F7F image-url("congruent_outline.jpg") repeat center center fixed;
 }
 
 #page
@@ -11,7 +14,8 @@
 	background-image: none;
 	border-style: none;
 	border-color: transparent;
-	background-color: #4D4D4D;
+	//background-color: #4D4D4D; lo quité tantito
+  background-color: #EAEAEA;
 	padding-bottom: 300px;
 	margin-left: auto;
 	margin-right: auto;

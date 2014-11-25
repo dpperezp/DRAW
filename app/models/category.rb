@@ -7,19 +7,23 @@ class Category < ActiveRecord::Base
   before_validation do
     puts "Antes de la validacion"
   end
+  
   after_validation do
-    puts "Despues de la validacion"
+    puts "Después de la validacion"
   end
+  
   before_save do
     puts "Antes de guardar"
   end
+  
   after_save do
-    puts "Despues de guardar"
+    puts "Después de guardar"
   end
+  
   after_initialize do
     if self.description.nil?
-      self.description = 'No hay descripcion disponible'
+      self.description = 'No hay descripción disponible'
+    end
   end
-    
 
 end

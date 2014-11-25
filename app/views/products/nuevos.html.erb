@@ -15,6 +15,7 @@
         <td><%= product.price %></td>
         <td><img src="<%= product.image %>" height=200></td>
         <td><%= product.description %></td>
+        <td><%= button_to 'Agregar al carrito', line_items_path(product_id: product) %></td>
       </tr>
     <% end %>
   </tbody>

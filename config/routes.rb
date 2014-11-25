@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
+  resources :line_items
+
+  resources :carts
+
   devise_for :users
   resources :categories
+  resources :products
 
   get 'welcome/index'
-
-  resources :products
-  
-  root 'products#index'
-  
   get '/nuevos' => "products#nuevos"
+  
+  root 'welcome#index'
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

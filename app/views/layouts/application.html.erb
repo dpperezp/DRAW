@@ -27,36 +27,36 @@ var __adobewebfontsappname__ = "muse";
 
   <div class="clearfix" id="page"><!-- group -->
    <div class="grpelem" id="u108"><!-- simple frame --></div>
-   <a class="nonblock nontext clip_frame grpelem" id="u132" href="index.html" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.9925,M12=0.1219,M21=-0.1219,M22=0.9925,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-8" data-mu-ie-matrix-dy="-13"><!-- image --><img class="block" id="u132_img" src="images/bireli.png" alt="" width="224" height="149"/></a>
+   <a class="nonblock nontext clip_frame grpelem" id="u132" href="/" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.9925,M12=0.1219,M21=-0.1219,M22=0.9925,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-8" data-mu-ie-matrix-dy="-13"><!-- image --><img class="block" id="u132_img" src="images/bireli.png" alt="" width="224" height="149"/></a>
    <div class="clearfix grpelem" id="u137"><!-- group -->
     <ul class="MenuBar clearfix grpelem" id="menuu154"><!-- horizontal box -->
      <li class="MenuItemContainer clearfix grpelem" id="u258"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u259" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u261-4"><!-- content --><p>Inicio</p></div></a>
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u259" href="/"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u261-4"><!-- content --><p>Inicio</p></div></a>
      </li>
      <li class="MenuItemContainer clearfix grpelem" id="u279"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u280" href="cat%c3%a1logo.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u282-4"><!-- content --><p>Catálogo</p></div></a>
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u280" href="/products"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u282-4"><!-- content --><p>Catálogo</p></div></a>
      </li>
      <li class="MenuItemContainer clearfix grpelem" id="u272"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u273" href="compras.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u275-4"><!-- content --><p>Compras</p></div></a>
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u273" href="/carts"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u275-4"><!-- content --><p>Compras</p></div></a>
      </li>
      <li class="MenuItemContainer clearfix grpelem" id="u265"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u266" href="acerca-de.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u268-4"><!-- content --><p>Acerca de</p></div></a>
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u266" href="/"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u268-4"><!-- content --><p>Acerca de</p></div></a>
      </li>
     </ul>
    </div>
    <div class="verticalspacer"></div>
     <%= yield %>
-  <% if user_signed_in? %>
-  <span>Bienvenido <%= current_user.email %>!</span>
-    <%= link_to "Salir", destroy_user_session_path, method: :delete %> 
-  <% end%>
+   <% if user_signed_in? %>
+     <span>Bienvenido <%= current_user.email %>!</span>
+     <%= link_to "Salir", destroy_user_session_path, method: :delete %> 
+   <% end%>
   </div>
    
  
-  <!-- JS includes -->
+  <!-- JS includes 
   <script type="text/javascript">
    if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
-</script>
+</script>-->
   <script type="text/javascript">
    window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
 </script>

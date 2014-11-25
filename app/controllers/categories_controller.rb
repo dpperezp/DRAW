@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
-  before_action :valid_categpry, only: [:show]
-  before_action :authenticate_user! 
+  before_action :valid_category, only: [:show]
+  #before_action :authenticate_user!, only:[:new, :edit, :update, :destroy]
   
   # GET /categories
   # GET /categories.json
@@ -79,8 +79,7 @@ class CategoriesController < ApplicationController
       valid= id < 2
       if !valid
         redirect_to categories_path
+      end
     end
-  
-  
   
 end
