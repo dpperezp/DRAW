@@ -4,8 +4,8 @@ class CartsController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :invalid_cart
   
   def index
-    @carts = Cart.all
-    respond_with(@carts)
+    @cart = Cart.find(session[:cart_id])
+    redirect_to "/carts/#{@cart.id}"
   end
 
   def show
