@@ -1,13 +1,79 @@
-<% if notice %> 
-  <p id="notice"><%= notice %></p> 
-<% end %>
+<script>
+  $('head').append('<%= stylesheet_link_tag 'compras'%>');
+  $('#u273').addClass('MuseMenuActive');
+</script>
 
-<ul> 
-  <% @cart.line_items.each do |item| %> 
-  <li><%= item.quantity %> &times; <%= item.product.name %> = <%= number_to_currency(item.total_price) %></li>
-  <% end %> 
-</ul>
-<p>Total: <%= number_to_currency(@cart.total_price) %></p>
-<%= button_to "Proceder al pedido", new_order_path, method: :get %>
-<%= button_to 'Vaciar carrito', @cart, method: :delete, data: { confirm: '¿Estás seguro?' } %>
 
+<div class="clearfix colelem" id="pu854"><!-- group -->
+  <div class="clearfix grpelem" id="u854"><!-- column -->
+    <div class="clearfix colelem" id="u775-4"><!-- content -->
+      <p id="u775-2">Información de usuario</p>
+    </div>
+    <div class="clearfix colelem" id="u776-11"><!-- content -->
+      <p id="u776" class="ayudamedios">&nbsp;</p>
+      <p id="u776-3">Nombre:</p>
+      <p id="u776-5">Correo:</p>
+      <p id="u776-7">Teléfono móvil:</p>
+      <p id="u776-9">Dirección:</p>
+    </div>
+    <% if notice %> 
+     <% @ayudamedios = notice %>
+     <script>
+       $('p.ayudamedios').empty();
+       $('p.ayudamedios').append('<%= @ayudamedios %>');
+       $( "p.ayudamedios" ).css( "fontSize", "20px" );
+       $( "p.ayudamedios" ).css( "color", "#A6C790" );
+     </script>
+     <% end %>
+  </div>
+  <div class="clearfix grpelem" id="tpu788-4"><!-- column -->
+    <div class="clearfix colelem" id="u788-4"><!-- content -->
+      <p id="u788-2">Confirmar compra</p>
+    </div>
+    <div class="clearfix colelem" id="pu789-9"><!-- group -->
+      <div class="clearfix grpelem" id="u789-9"><!-- content -->
+        <p id="u789">&nbsp;</p>
+        <p id="u789-3">Cantidad de productos: <%= @cart.total_items%></p>
+        <p id="u789-5">Total a pagar: <%= number_to_currency(@cart.total_price) %></p>
+        <p id="u789-6">&nbsp;</p>
+        <p id="u789-7">&nbsp;</p>
+      </div>
+      <div class="rounded-corners clearfix grpelem" id="lu791-4"><!-- content -->
+        <p id="u791-2"><%= button_to "Proceder al pedido", new_order_path, method: :get %></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clearfix colelem" id="u779"><!-- column -->
+  <div class="clearfix colelem" id="u787-4"><!-- content -->
+    <p id="u787-2"> <%= button_to 'Vaciar carrito', @cart, method: :delete, data: { confirm: '¿Estás seguro?' } %></p>
+  </div>
+  <% @cart.line_items.each do |item| %>
+  <div class="clearfix colelem" <%= cycle('id=lpu747-4', 'id=pu753-4') %>><br><!-- group -->
+    <div class="clearfix grpelem" <%= cycle('id=lu747-4', 'id=u753-4') %>><!-- content -->
+      <p><img src="<%= item.product.image %>" style="width: 249px"></p>
+    </div>
+    <div class="clearfix grpelem" <%= cycle('id=lu748-4', 'id=lu752-4') %>><!-- content -->
+      <div class="clearfix grpelem" id="lpu788-4"><!-- column -->
+        <div class="clearfix colelem" id="lu788-4"><!-- content -->
+          <p id="lu788-2"><%= item.product.name %> &times; <%= item.quantity %></p>
+        </div>
+        
+        <div class="clearfix colelem" id="lpu789-9"><!-- group -->
+          <div class="clearfix grpelem" id="lu789-9"><!-- content -->
+            <p id="lu789">&nbsp;</p>
+            <p id="lu789-3"><%= item.product.description %></p>
+            <p id="lu789-5">Costo: <%= item.product.price %></p>
+            <p id="lu789-6">&nbsp;</p>
+            <p id="lu789-7">&nbsp;</p>
+          </div>
+<!--           <div class="rounded-corners clearfix grpelem" id="u791-4">
+            <p id="u791-2" ><%= button_to 'Agregar al carrito' %></p>
+          </div> -->
+        </div>
+      </div>
+      <!--       </p> -->
+    </div>
+  </div>
+  <% end %>
+</div>
