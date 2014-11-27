@@ -1,0 +1,28 @@
+<% @products.each do |product| %>
+  <div class="clearfix colelem" <%= cycle('id=pu747-4', 'id=pu753-4') %>><br><!-- group -->
+    <div class="clearfix grpelem" <%= cycle('id=u747-4', 'id=u753-4') %>><!-- content -->
+      <p><img src="<%= product.image %>" style="width: 249px"></p>
+    </div>
+    <div class="clearfix grpelem" <%= cycle('id=u748-4', 'id=u752-4') %>><!-- content -->
+      <div class="clearfix grpelem" id="pu788-4"><!-- column -->
+      <div class="clearfix colelem" id="u788-4"><!-- content -->
+       <p id="u788-2"><%= product.name %></p>
+      </div>
+      <div class="clearfix colelem" id="pu789-9"><!-- group -->
+       <div class="clearfix grpelem" id="u789-9"><!-- content -->
+        <p id="u789">&nbsp;</p>
+        <p id="u789-3"><%= product.description %></p>
+        <p id="u789-5">Costo: <%= product.price %></p>
+        <p id="u789-6">&nbsp;</p>
+        <p id="u789-7">&nbsp;</p>
+       </div>
+       <div class="rounded-corners clearfix grpelem" id="u791-4"><!-- content -->
+        <p id="u791-2" ><%= button_to 'Agregar al carrito', line_items_path(product_id: product) %></p>
+       </div>
+      </div>
+     </div>
+<!--       </p> -->
+    </div>
+  </div>
+<% end %>
+

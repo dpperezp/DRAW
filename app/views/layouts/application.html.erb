@@ -5,14 +5,15 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-     
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Allura">   
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
   <meta name="generator" content="7.4.30.244"/>
   <title>Menu</title>
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/site_global.css?464803400"/>
+<!--   <link rel="stylesheet" type="text/css" href="css/site_global.css?464803400"/>
   <link rel="stylesheet" type="text/css" href="css/master_a-p_gina-maestra.css?212590545"/>
-  <link rel="stylesheet" type="text/css" href="css/menu.css?179309869" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/menu.css?179309869" id="pagesheet"/> -->
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
@@ -24,55 +25,65 @@ var __adobewebfontsappname__ = "muse";
 </script>
    </head>
  <body>
-
-  <div class="clearfix" id="page"><!-- group -->
-   <div class="grpelem" id="u108"><!-- simple frame --></div>
-   <a class="nonblock nontext clip_frame grpelem" id="u132" href="/" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.9925,M12=0.1219,M21=-0.1219,M22=0.9925,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-8" data-mu-ie-matrix-dy="-13"><!-- image --><img class="block" id="u132_img" src="images/bireli.png" alt="" width="224" height="149"/></a>
-   <div class="clearfix grpelem" id="u137"><!-- group -->
-    <ul class="MenuBar clearfix grpelem" id="menuu154"><!-- horizontal box -->
-     <li class="MenuItemContainer clearfix grpelem" id="u258"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u259" href="/"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u261-4"><!-- content --><p>Inicio</p></div></a>
-     </li>
-     <li class="MenuItemContainer clearfix grpelem" id="u279"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u280" href="/products"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u282-4"><!-- content --><p>Catálogo</p></div></a>
-     </li>
-     <li class="MenuItemContainer clearfix grpelem" id="u272"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u273" href="/carts"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u275-4"><!-- content --><p>Compras</p></div></a>
-     </li>
-     <li class="MenuItemContainer clearfix grpelem" id="u265"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u266" href="/"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u268-4"><!-- content --><p>Acerca de</p></div></a>
-     </li>
-    </ul>
-   </div>
-   <div class="verticalspacer"></div>
-    <%= yield %>
-   <% if user_signed_in? %>
+  <div class="clearfix" id="page"><!-- column -->
+   <div class="position_content" id="page_position_content">
+    <div class="clearfix colelem" id="pu108"><!-- group -->
+     <div class="grpelem" id="u108"><!-- simple frame --></div>
+     <a class="nonblock nontext MuseLinkActive clip_frame grpelem" id="u132" href="/" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.9925,M12=0.1219,M21=-0.1219,M22=0.9925,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-8" data-mu-ie-matrix-dy="-13"><!-- image --><img class="block" id="u132_img" src="<%=image_path 'bireli.png'%>" alt="" width="224" height="149"/></a>
+     <div class="clearfix grpelem" id="u137"><!-- group -->
+      <ul class="MenuBar clearfix grpelem" id="menuu154"><!-- horizontal box -->
+       <li class="MenuItemContainer clearfix grpelem" id="u258"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu rounded-corners clearfix colelem" id="u259" href="/"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u261-4"><!-- content --><p>Inicio</p></div></a>
+       </li>
+       <li class="MenuItemContainer clearfix grpelem" id="u279"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu rounded-corners clearfix colelem" id="u280" href="/products"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u282-4"><!-- content --><p>Catálogo</p></div></a>
+       </li>
+       <li class="MenuItemContainer clearfix grpelem" id="u272"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu rounded-corners clearfix colelem" id="u273" href="/carts"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u275-4"><!-- content --><p>Compras</p></div></a>
+       </li>
+       <li class="MenuItemContainer clearfix grpelem" id="u265"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu rounded-corners clearfix colelem" id="u266" href="/about"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u268-4"><!-- content --><p>Acerca de</p></div></a>
+       </li>
+      </ul>
+     </div>
+    </div>
+     
+     <%= yield %>
+     <% if user_signed_in? %>
      <span>Bienvenido <%= current_user.email %>!</span>
      <%= link_to "Salir", destroy_user_session_path, method: :delete %> 
-   <% end%>
-  </div>
+     <% end%>
+    <% if notice %> 
+     <% @ayudamedios = notice %>
+     <script>
+       $('h1').empty();
+       $('h1').append('<%= @ayudamedios %>');
+       $( "h1" ).css( "fontSize", "20px" );
+       $( "h1" ).css( "color", "#A6C790" );
+     </script>
+     <% end %>
+    <div class="verticalspacer"></div>
+    </div>
+   </div>
+   <!-- JS includes -->
    
- 
-  <!-- JS includes 
-  <script type="text/javascript">
-   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
-</script>-->
-  <script type="text/javascript">
-   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
-</script>
-  <script src="scripts/museutils.js?3880880085" type="text/javascript"></script>
-  <script src="scripts/jquery.musemenu.js?32367222" type="text/javascript"></script>
-  <script src="scripts/jquery.watch.js?4199601726" type="text/javascript"></script>
-  <!-- Other scripts -->
-  <script type="text/javascript">
-   $(document).ready(function() { try {
-Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
-Muse.Utils.prepHyperlinks(true);/* body */
-Muse.Utils.initWidget('.MenuBar', function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
-Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.showWidgetsWhenReady();/* body */
-Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
-} catch(e) { Muse.Assert.fail('Error calling selector function:' + e); }});
-</script>
-   </body>
+   <script type="text/javascript">
+     window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+   </script>
+   <script src="scripts/museutils.js?3880880085" type="text/javascript"></script>
+   <script src="scripts/jquery.musemenu.js?32367222" type="text/javascript"></script>
+   <script src="scripts/jquery.watch.js?4199601726" type="text/javascript"></script>
+   <!-- Other scripts -->
+   <script type="text/javascript">
+     $(document).ready(function() { try {
+       Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+       Muse.Utils.prepHyperlinks(true);/* body */
+       Muse.Utils.initWidget('.MenuBar', function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+       Muse.Utils.fullPage('#page');/* 100% height page */
+       Muse.Utils.showWidgetsWhenReady();/* body */
+       Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+       $.autoUpdateStylesheets()
+     } catch(e) { Muse.Assert.fail('Error calling selector function:' + e); }});
+   </script>
+  </body>
 </html>

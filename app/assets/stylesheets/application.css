@@ -10,6 +10,15 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *= require carts
+ *= require categories
+ *= require line_items
+ *= require orders
+ *= require products
+ *= require scaffolds
+ *= require welcome
+ *= require master_a-p_gina-maestra
+ *= require site_global
+ *= require animate
  *= require_self
  */

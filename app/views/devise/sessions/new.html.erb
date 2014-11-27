@@ -1,26 +1,45 @@
-<h2>Log in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+<script>
+  $('head').append('<%= stylesheet_link_tag 'menu'%>');
+  $('head').append('<%= stylesheet_link_tag 'log_in'%>');
+</script>
+<div class="clearfix" id="page"><!-- column -->
+  <div class="position_content" id="page_position_content">
+    <div class="clearfix colelem" id="pu346"><!-- group -->
+      <div class="grpelem" id="u346"><!-- simple frame --></div>
+      <a class="nonblock nontext clip_frame grpelem" id="u347" href="index.html" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.9925,M12=0.1219,M21=-0.1219,M22=0.9925,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-8" data-mu-ie-matrix-dy="-13"><!-- image --><img class="block" id="u347_img" src="images/bireli.png" alt="" width="224" height="149"/></a>
     </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
+    <div class="ts05-Title-Graduate clearfix colelem" id="u529-4"><!-- content -->
+      <h1>Iniciar sesión</h1>
+    </div>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), :class => "form-grp clearfix colelem", :id => "widgetu450") do |f| %>
+<!--     <form class="form-grp clearfix colelem" id="widgetu450" method="post" enctype="multipart/form-data" action="scripts/form-u450.php">none box -->
+      <div class="fld-grp clearfix grpelem" id="widgetu479" data-required="true"><!-- none box -->
+        <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u482-4"><!-- content -->
+          <%= f.email_field :email, autofocus: true, :class => "wrapped-input fld-prompt", :id => "widgetu479_prompt" %>
+<!--           <input class="wrapped-input" type="text" spellcheck="false" id="widgetu479_input" name="custom_U479" tabindex="1"/> -->
+          <label class="wrapped-input fld-prompt" id="widgetu479_prompt" for="widgetu479_input"><span class="actAsPara">Introducir correo</span></label></span>
+      </div>
+      <div class="fld-grp clearfix grpelem" id="widgetu467" data-required="true" data-type="email"><!-- none box -->
+        <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u469-4"><!-- content -->
+          <%= f.password_field :password, autocomplete: "off", :class => "wrapped-input", :id => "widgetu467_input" %>
+<!--           <input class="wrapped-input" type="text" spellcheck="false" id="widgetu467_input" name="Email" tabindex="2"/> -->
+          <label class="wrapped-input fld-prompt" id="widgetu467_prompt" for="widgetu467_input"><span class="actAsPara">Introducir contraseña</span></label></span>
+      </div>
+      <div class="clearfix grpelem" id="u465-4"><!-- content -->
+        <p>Enviando formulario...</p>
+      </div>
+      <div class="clearfix grpelem" id="u466-4"><!-- content -->
+        <p>El servidor ha detectado un error.</p>
+      </div>
+      <div class="clearfix grpelem" id="u477-4"><!-- content -->
+        <p>Formulario recibido.</p>
+      </div>
+      <%= f.submit "Log in", :class => "submit-btn NoWrap grpelem", :id => "u478-17" %>
+<!--       <input class="submit-btn NoWrap grpelem" id="u478-17" type="submit" value="" tabindex="3"/>state-based BG images -->
+      <% end %>
+<!--     </form> -->
+    <a class="nonblock nontext clearfix colelem" id="u530-4" href="/users/sign_up"><!-- content --><p><span id="u530">Registrar nuevo usurario</span></p></a>
+    <div class="verticalspacer"></div>
   </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>

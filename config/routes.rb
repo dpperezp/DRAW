@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   resources :products
 
   get 'welcome/index'
+  get 'about/' => 'about#index'
+  
   get '/nuevos' => "products#nuevos"
   
   root 'welcome#index', as: 'index'

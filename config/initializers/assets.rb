@@ -1,0 +1,7 @@
+Rails.application.config.assets.precompile += %w( index.css )
+Rails.application.config.assets.precompile += %w( cat_logo.css )
+Rails.application.config.assets.precompile += %w( compras.css )
+Rails.application.config.assets.precompile += %w( acerca_de.css )
+Rails.application.config.assets.precompile += %w( nuevo_usuario.css )
+Rails.application.config.assets.precompile += %w( log_in.css )
+Rails.application.config.assets.precompile += %w( menu.css )

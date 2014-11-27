@@ -1,29 +1,54 @@
-<h2>Sign up</h2>
+<script>
+  $('head').append('<%= stylesheet_link_tag 'menu'%>');
+  $('head').append('<%= stylesheet_link_tag 'nuevo_usuario'%>');
+</script>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<div class="clearfix grpelem" id="u742"><!-- group -->
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), :class => "form-grp clearfix grpelem", :id => "widgetu672") do |f| %>
   <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @validatable %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
+<!--   <form class="form-grp clearfix grpelem" id="widgetu672" method="post" enctype="multipart/form-data" action="scripts/form-u672.php"> -->
+    <div class="fld-grp clearfix grpelem" id="widgetu694" data-required="true"><!-- none box -->
+      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u696-4"><!-- content -->
+         <%= f.email_field :email, autofocus: true, :class => "wrapped-input", :id => "widgetu694_input" %>
+<!--         <input class="wrapped-input" type="text" spellcheck="false" id="widgetu694_input" name="custom_U694" tabindex="1"/> -->
+        <label class="wrapped-input fld-prompt" id="widgetu694_prompt" for="widgetu694_input"><span class="actAsPara">Introducir correo electronico</span></label></span>
+      <div class="clearfix grpelem" id="u697-4"><!-- content -->
+        <p>Obligatorio</p>
+      </div>
+    </div>
+    <div class="fld-grp clearfix grpelem" id="widgetu732" data-required="true" data-type="email"><!-- none box -->
+      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u733-4"><!-- content -->
+        
+        <%= f.password_field :password, autocomplete: "off", :class => "wrapped-input", :id => "widgetu732_input" %>
+<!--         <input class="wrapped-input" type="text" spellcheck="false" id="widgetu732_input" name="Email" tabindex="2"/> -->
+        <label class="wrapped-input fld-prompt" id="widgetu732_prompt" for="widgetu732_input"><span class="actAsPara">Introduce una contraseña</span></label></span>
+      <div class="clearfix grpelem" id="u735-4"><!-- content -->
+        <p>Obligatorio</p>
+      </div>
+    </div>
+    <div class="fld-grp clearfix grpelem" id="widgetu704" data-required="true"><!-- none box -->
+      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u708-4"><!-- content -->
+<!--         <%= f.label :password_confirmation %><br /> -->
+        <%= f.password_field :password_confirmation, autocomplete: "off", :class => "wrapped-input", :id => "widgetu704_input" %>
+<!--         <input class="wrapped-input" type="text" spellcheck="false" id="widgetu704_input" name="custom_U704" tabindex="3"/> -->
+        <label class="wrapped-input fld-prompt" id="widgetu704_prompt" for="widgetu704_input"><span class="actAsPara">Repite la contraseña</span></label></span>
+      <div class="clearfix grpelem" id="u705-4"><!-- content -->
+        <p>Obligatorio</p>
+      </div>
+    </div>
+    <div class="clearfix grpelem" id="u714-4"><!-- content -->
+      <p>Enviando formulario...</p>
+    </div>
+    <div class="clearfix grpelem" id="u731-4"><!-- content -->
+      <p>El servidor ha detectado un error.</p>
+    </div>
+    <div class="clearfix grpelem" id="u678-4"><!-- content -->
+      <p>Formulario recibido.</p>
+    </div>
+    <%= f.submit "Sign up", :class => "submit-btn NoWrap grpelem", :id => "u715-17" %>
+<!--     <input class="submit-btn NoWrap grpelem" id="u715-17" type="submit" value="" tabindex="9"/> -->
+    <% end %>
+<!--   </form> -->
+</div>
 <%= render "devise/shared/links" %>
+

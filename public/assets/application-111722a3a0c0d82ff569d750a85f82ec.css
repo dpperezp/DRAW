@@ -1,0 +1,663 @@
+/* line 1, /home/action/workspace/bireli/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/action/workspace/bireli/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/action/workspace/bireli/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/action/workspace/bireli/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /home/action/workspace/bireli/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /home/action/workspace/bireli/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /home/action/workspace/bireli/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /home/action/workspace/bireli/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /home/action/workspace/bireli/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /home/action/workspace/bireli/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /home/action/workspace/bireli/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /home/action/workspace/bireli/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 2, /home/action/workspace/bireli/app/assets/stylesheets/master_a-p_gina-maestra.css.scss */
+#u108 {
+  border-style: none;
+  border-color: transparent;
+  background-color: #333333;
+  position: relative;
+}
+
+/* line 10, /home/action/workspace/bireli/app/assets/stylesheets/master_a-p_gina-maestra.css.scss */
+#u132 {
+  -webkit-transform: matrix(0.9925, -0.1219, 0.1219, 0.9925, -8, 14);
+  -ms-transform: matrix(0.9925, -0.1219, 0.1219, 0.9925, -8, 14);
+  -o-transform: matrix(0.9925, -0.1219, 0.1219, 0.9925, -8, 14);
+  transform: matrix(0.9925, -0.1219, 0.1219, 0.9925, -8, 14);
+  position: relative;
+}
+
+/* line 19, /home/action/workspace/bireli/app/assets/stylesheets/master_a-p_gina-maestra.css.scss */
+#u137 {
+  border-style: none;
+  border-color: transparent;
+  background-color: #D9DA8A;
+  position: relative;
+}
+
+/* line 27, /home/action/workspace/bireli/app/assets/stylesheets/master_a-p_gina-maestra.css.scss */
+#u259 {
+  border-style: none;
+  border-color: transparent;
+  background-color: #A6C790;
+  -moz-border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -khtml-border-radius: 17px;
+  border-radius: 17px;
+  position: relative;
+}
+
+/* line 39, /home/action/workspace/bireli/app/assets/stylesheets/master_a-p_gina-maestra.css.scss */
+#u280 {
+  border-style: none;
+  border-color: transparent;
+  background-color: #A6C790;
+  -moz-border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -khtml-border-radius: 17px;
+  border-radius: 17px;
+  position: relative;
+}
+
+/* line 51, /home/action/workspace/bireli/app/assets/stylesheets/master_a-p_gina-maestra.css.scss */
+#u273 {
+  border-style: none;
+  border-color: transparent;
+  background-color: #A6C790;
+  -moz-border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -khtml-border-radius: 17px;
+  border-radius: 17px;
+  position: relative;
+}
+
+/* line 63, /home/action/workspace/bireli/app/assets/stylesheets/master_a-p_gina-maestra.css.scss */
+#menuu154, #u258, #u279, #u272, #u265 {
+  position: relative;
+}
+
+/* line 68, /home/action/workspace/bireli/app/assets/stylesheets/master_a-p_gina-maestra.css.scss */
+#u266 {
+  border-style: none;
+  border-color: transparent;
+  background-color: #A6C790;
+  -moz-border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -khtml-border-radius: 17px;
+  border-radius: 17px;
+  position: relative;
+}
+
+/* line 80, /home/action/workspace/bireli/app/assets/stylesheets/master_a-p_gina-maestra.css.scss */
+#u259.MuseMenuActive, #u280.MuseMenuActive, #u273.MuseMenuActive, #u266.MuseMenuActive {
+  border-width: 3px;
+  border-style: solid;
+  border-color: #A6C790;
+  background-color: #FFE2A7;
+}
+
+/* line 88, /home/action/workspace/bireli/app/assets/stylesheets/master_a-p_gina-maestra.css.scss */
+#u261-4, #u282-4, #u275-4, #u268-4 {
+  text-align: center;
+  color: #FF0031;
+  font-family: graduate, sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+/* line 97, /home/action/workspace/bireli/app/assets/stylesheets/master_a-p_gina-maestra.css.scss */
+.MenuItem {
+  cursor: pointer;
+}
+/* line 2, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+html {
+  min-height: 100%;
+  min-width: 100%;
+  -ms-text-size-adjust: none;
+  background: #7f7f7f url(/assets/congruent_outline.jpg) repeat center center fixed;
+}
+
+/* line 10, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, a {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  transform-origin: left top;
+}
+
+/* line 21, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 27, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+fieldset, img {
+  border: 0;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  transform-origin: left top;
+}
+
+/* line 36, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+/* line 42, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+del, ins {
+  text-decoration: none;
+}
+
+/* line 47, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+li {
+  list-style: none;
+}
+
+/* line 52, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+caption, th {
+  text-align: left;
+}
+
+/* line 57, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: inherit;
+}
+
+/* line 63, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+input, button, textarea, select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+/* line 72, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+body {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 14px;
+  line-height: 17px;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  /* kerning, primarily */
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 83, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+  body {
+    text-rendering: auto;
+  }
+}
+/* line 87, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+a:link {
+  color: #0000FF;
+  text-decoration: underline;
+}
+
+/* line 93, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+a:visited {
+  color: #800080;
+  text-decoration: underline;
+}
+
+/* line 99, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+a:hover {
+  color: #0000FF;
+  text-decoration: underline;
+}
+
+/* line 105, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+a:active {
+  color: #EE0000;
+  text-decoration: underline;
+}
+
+/* line 111, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+a.nontext {
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 119, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.normal_text {
+  color: #000000;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 17px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0px;
+  vertical-align: 0px;
+  padding: 0px;
+}
+
+/* line 135, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.ts05-Title-Graduate {
+  color: #41424B;
+  font-family: graduate, sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 70px;
+  text-align: center;
+  padding: 0px;
+}
+
+/* line 146, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.ts05-Subtitle-Allura {
+  color: #41424B;
+  font-family: allura, cursive;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  padding: 0px;
+}
+
+/* line 157, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.Headline {
+  color: #FFFFFF;
+  font-family: open-sans, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  padding: 0px;
+}
+
+/* line 168, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.TabbedPanelsTab {
+  white-space: nowrap;
+}
+
+/* line 173, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.MenuBar .MenuBarView, .MenuBar .SubMenuView {
+  display: block;
+  list-style: none;
+}
+
+/* line 179, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.MenuBar .SubMenu {
+  display: none;
+  position: absolute;
+}
+
+/* line 185, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.NoWrap {
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+/* line 191, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.rootelem {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 197, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.colelem {
+  display: inline;
+  float: left;
+  clear: both;
+}
+
+/* line 204, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.grpelem {
+  display: inline;
+  float: left;
+}
+
+/* line 210, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.clearfix:after {
+  content: "\0020";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* line 219, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+
+/* line 224, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.clip_frame {
+  overflow: hidden;
+}
+
+/* line 229, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.inclusion_context {
+  display: table;
+  table-layout: fixed;
+  width: 0.01px;
+}
+
+/* line 236, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.inclelem {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* line 242, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.f3s_mid {
+  background-repeat: repeat;
+}
+
+/* line 247, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.f3s_top, .f3s_bot {
+  background-repeat: no-repeat;
+}
+
+/* line 252, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.f9s_top_left, .f9s_bot_left {
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/* line 258, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.f9s_top_right, .f9s_bot_right {
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/* line 264, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.f9s_top_mid, .f9s_bot_mid {
+  background-repeat: repeat-x;
+  background-position: 0px 0px;
+}
+
+/* line 270, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.f9s_mid_left {
+  background-repeat: repeat-y;
+  background-position: left;
+}
+
+/* line 276, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.f9s_mid_right {
+  background-repeat: repeat-y;
+  background-position: right;
+}
+
+/* line 282, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.f9s_center {
+  background-repeat: repeat;
+  background-position: 0px 0px;
+}
+
+/* line 288, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.popup_anchor {
+  position: relative;
+  width: 0px;
+  height: 0px;
+}
+
+/* line 295, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.popup_element {
+  z-index: 100000;
+}
+
+/* line 300, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.pointer_cursor {
+  cursor: pointer;
+}
+
+/* line 305, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+span.wrap {
+  content: '';
+  clear: left;
+  display: block;
+}
+
+/* line 312, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+span.actAsInlineDiv {
+  display: inline-block;
+}
+
+/* line 317, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.position_content, .excludeFromNormalFlow {
+  float: left;
+}
+
+/* line 322, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.preload_images {
+  position: absolute;
+  overflow: hidden;
+  left: -9999px;
+  top: -9999px;
+  height: 1px;
+  width: 1px;
+}
+
+/* line 332, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+preload {
+  height: 1px;
+  width: 1px;
+}
+
+/* line 338, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.animateStates {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+/* line 346, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+input:focus, textarea:focus {
+  outline: none;
+}
+
+/* line 351, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+/* line 357, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.fld-prompt {
+  pointer-events: none;
+}
+
+/* line 362, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.wrapped-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border: none;
+}
+
+/* line 371, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.submit-btn {
+  z-index: 50000;
+}
+
+/* line 376, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.anchor_item {
+  width: 22px;
+  height: 18px;
+}
+
+/* line 382, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.MenuBar .SubMenuVisible, .MenuBarVertical .SubMenuVisible, .MenuBar .SubMenu .SubMenuVisible, .popup_element.Active, span.actAsPara, .actAsDiv, a.nonblock.nontext, img.block {
+  display: block;
+}
+
+/* line 387, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.ose_ei {
+  visibility: hidden;
+  z-index: 0;
+}
+
+/* line 393, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.widget_invisible, .js .invi, .js .mse_pre_init, .js .an_invi {
+  visibility: hidden;
+}
+
+/* line 398, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.no_vert_scroll {
+  overflow-y: hidden;
+}
+
+/* line 403, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.always_vert_scroll {
+  overflow-y: scroll;
+}
+
+/* line 408, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.always_horz_scroll {
+  overflow-x: scroll;
+}
+
+/* line 413, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.popup_element.Inactive, .js .disn, .hidden {
+  display: none;
+}
+
+/* line 418, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.fullscreen {
+  overflow: hidden;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 432, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.scroll_wrapper {
+  position: absolute;
+  overflow: auto;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 446, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.MenuBar .MenuItemContainer, .SlideShowContentPanel .fullscreen img {
+  position: relative;
+}
+
+/* line 451, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+.accordion_wrapper {
+  display: inline;
+  float: left;
+  width: 0px;
+}
+
+/* line 458, /home/action/workspace/bireli/app/assets/stylesheets/site_global.css.scss */
+body {
+  background: #7f7f7f url("congruent_outline.jpg") repeat center center fixed;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+
+
+
+
+
+
+ */
+
